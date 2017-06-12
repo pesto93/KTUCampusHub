@@ -1,0 +1,18 @@
+<ion-view cache-view="false" class="tabs-top">
+  <div class=" bar bar-header" side="left" ng-controller="NavCtrl">
+    <button ng-click="showMenu()" class="button button-icon icon ion-navicon"></button>
+    <div class="h1 title">{{"HELP" | translate}}</div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options"></button>
+  </div>
+  <ion-content style="top: 45px">
+    <ion-list>
+      <ion-item ng-repeat="helps in help" class="item-icon-left item-icon-right" type="item-text-wrap"
+                href="#/help/help-details/{{helps.id}}">
+        <h2> {{helps.Title}} </h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+    </ion-list>
+    <div style="padding: 20px"></div>
+  </ion-content>
+</ion-view>

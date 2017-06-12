@@ -1,0 +1,32 @@
+<ion-view cache-view="false">
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back" ></button>
+    <div class="h1 title">{{"FACULTY"|translate}}</div>
+    <button ng-click="showSearch($event)" class="button button-icon icon ion-search"></button>
+  </div>
+
+  <div class="bar bar-header item-input-inset" ng-hide="hideSearch">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="{{'SEARCH'| translate}}" ng-model="searchText1" >
+    </label>
+    <button class="custom-cancel" ng-click="removeSearch($event)" >
+      {{"CANCEL"|translate}}
+    </button>
+  </div>
+
+  <ion-content class="scroll-y">
+    <ion-list>
+      <ion-item ng-repeat="faculties in faculty | filter:searchText1" class="item-icon-left item-icon-right" type="item-text-wrap"
+                href="#/tab/faculties/faculty-details/{{faculties.id}}">
+        <h2>
+          {{faculties.building_name}}
+        </h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+
+      <div class="content" style="padding: 30px"></div>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

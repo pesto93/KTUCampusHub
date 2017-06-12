@@ -1,0 +1,28 @@
+<ion-view >
+  <div class="bar bar-header" side="left" ng-controller="NavCtrl">
+    <button ng-click="showMenu()" class="button button-icon icon ion-navicon" ></button>
+    <div class="h1 title">{{"EVENTS" | translate}}</div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options"></button>
+  </div>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/events/news-details"> <!--ng-repeat="chat in chats"-->
+        <h2> {{"NEWS" | translate}} </h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/events/leisure-details"> <!--ng-repeat="chat in chats"-->
+        <h2> {{"LEISURE EVENT" | translate}} </h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/events/conference-details"> <!--ng-repeat="chat in chats"-->
+        <h2> {{"CONFERENCE" | translate}} </h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <a href="#/tab/events/add-event">
+        <button  class="custom-button">
+          {{"ADD EVENT" | translate}}
+        </button>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

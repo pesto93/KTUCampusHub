@@ -1,0 +1,72 @@
+<ion-view cache-view="false">
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back"></button>
+    <div class="h1 title">{{cafeDetail.Cafe_name | limitTo: 25}}...</div>
+    <!-- <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options" style="color: white"></button>-->
+  </div>
+
+  <ion-content class="scroll-y">
+    <div class="img-wrap"
+         style="background-image: url(data:image/jpg;base64,{{cafeDetail.Images}}); height:200px;">
+    </div>
+    <div style="padding-bottom: 50px" class="img-title-bottom">
+      <h4 class="cafe-name" style="position: absolute">
+        {{cafeDetail.Cafe_name}}
+      </h4>
+      <a style="display: none" class="location-icon">
+        <i class="custom-icon ion-navigate"></i> {{"DIRECTION" | translate}}
+      </a>
+    </div>
+
+    <div class=" custom-connect">
+      <a class="web-container">
+        <i class=" web-icon ion-ios-world"></i>{{"WEBSITE" | translate}}
+      </a>
+    </div>
+
+    <div class="content padding  no-padding-bottom" style="z-index: -1;">
+      <hr>
+      <p class="padding" style="margin-bottom: 0px">
+        <i class="icon ion-clock"></i> {{"OPENING HOURS" | translate}} : {{cafeDetail.Cafe_opening_hours | date:'HH:MM:'
+        | limitTo:5}}
+        <br/>
+        <i class="icon ion-clock"></i> {{"CLOSING HOURS" | translate}} : {{cafeDetail.Cafe_closing_hours | date:'HH:MM:'
+        | limitTo:5}}
+      <hr>
+      </p>
+      <div class="padding-left">
+        <p>
+          {{"ADDRESS" | translate}}: {{cafeDetail.Cafe_address}}
+        </p>
+      </div>
+      <hr>
+    </div>
+
+    <div class="list list-inset">
+      <p class="padding-left">{{"MENU" | translate}}</p>
+      <hr>
+      <div class="row header">
+        <div class="col col-66">
+          {{"FOOD" | translate}}
+        </div>
+        <div class="col">
+          {{"PRICE" | translate}}
+        </div>
+      </div>
+      <div class="row" ng-repeat="menu in menus track by $index" ng-hide="!menu.id"> <!--ng-repeat="">-->
+        <div class="col col-66" style="color:black">
+          {{menu.Food_name}}
+        </div>
+        <div class="col" style="color:black">
+          {{menu.Price}}
+        </div>
+      </div>
+    </div>
+
+    <div class="content" style="padding: 50px"></div>
+
+  </ion-content>
+
+
+</ion-view>
+

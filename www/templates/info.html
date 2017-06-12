@@ -1,0 +1,29 @@
+<ion-view cache-view="false" class="tabs-top">
+  <div class=" bar bar-header" side="left" ng-controller="NavCtrl">
+    <button ng-click="showMenu()" class="button button-icon icon ion-navicon" ></button>
+    <div class="h1 title"> {{"INFORMATION" | translate}} </div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options"></button>
+  </div>
+  <ion-content style="top: 45px">
+    <div class="padding ">
+      <a ng-repeat="infos in info"
+         href="#/info/info-details/{{infos.id}}" style="text-decoration: none">
+        <div class="card">
+          <div class="item item-divider" style="background-color: #d9d9d9;" >
+            <h2 style="font-size: large">{{infos.Title}}</h2>
+          </div>
+          <div class="item item-text-wrap">
+            <p>{{infos.Date }}</p>
+          </div>
+          <div class="item item-text-wrap">
+            <p>
+              {{infos.Description | limitTo:150}}...
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="content" style="padding: 30px"></div>
+  </ion-content>
+</ion-view>

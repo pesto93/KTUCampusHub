@@ -1,0 +1,48 @@
+<ion-view>
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back"></button>
+    <div class="h1 title">{{bank_Name}}</div>
+
+  </div>
+
+  <ion-content class="scroll-y">
+    <div id="map-3" data-tap-disabled="true"
+         style=" height:400px;">
+    </div>
+    <div class="img-title-bottom" ng-controller="NavCtrl">
+      <h4 class="branch-title" >
+        {{"BRANCH"|translate}}
+      </h4>
+    </div>
+    <div class=" custom-location ">
+      <div class="locate">
+        <p > {{"LOCATION"|translate}} A: <br>
+        </p>
+          <p ng-show="userDestination !=null" class="ion-location"> {{"CURRENT LOCATION"|translate}}
+        </p>
+      </div>
+
+      <div class="locate"  >
+        <p> {{"DESTINATION"|translate}} B: <br>
+          {{userDestination}}
+        </p>
+
+      </div>
+
+    </div>
+
+   <!-- <ion-list>
+      <ion-item ng-repeat="branches in branch" ng-show="branches.Bank_Type == bank_Name" class="item-icon-left item-icon-right" type="item-text-wrap">
+        <h2> {{branches.Bank_Branch}} </h2>
+      </ion-item>
+
+    </ion-list>-->
+
+    <div class="content" style="padding: 80px"></div>
+
+
+  </ion-content>
+
+
+</ion-view>
+

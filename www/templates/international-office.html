@@ -1,0 +1,75 @@
+<ion-view cache-view="false">
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back" ></button>
+    <div class="h1 title">{{officeInfo.building_name}}</div>
+
+  </div>
+
+  <ion-content  >
+    <div class="img-wrap"
+         style="background-image: url(data:image/jpg;base64,{{officeInfo.Images}}); height:200px;">
+    </div>
+    <div class="img-title-bottom">
+      <h4 class="custom-title">
+       {{officeInfo.building_name}}
+      </h4>
+      <a  class="location-icon" ng-controller="BuildingLocationCtrl" ng-click="buildingLocation(officeInfo.Cord)" >
+        <i class="custom-icon ion-navigate"></i> {{"DIRECTION" | translate}}
+      </a>
+    </div>
+
+    <div class=" custom-connect ">
+      <a  class="connect-link2"
+          onclick="window.open('http://ktu.edu/en/admissions', '_system', 'location=yes');">
+        <i class=" web-icon  ion-ios-world"></i>{{"WEBSITE" | translate}}
+      </a>
+
+      <a  class="connect-link2" ng-href="tel:{{officeInfo.admin_contact}}" >
+        <i class="web-icon ion-android-call"></i>{{"CALL" | translate}}
+      </a>
+    </div>
+
+    <div class="content padding  no-padding-bottom" style="z-index: -1;">
+      <hr>
+      <p class="padding" style="margin-bottom: 0px">
+        <i class="icon ion-clock"></i> {{"OPENING HOURS" | translate}} : {{officeInfo.Opening_hours | date: "HH:mm:ss" | limitTo:5 }}
+        <br/>
+        <i class="icon ion-clock"></i> {{"CLOSING HOURS" | translate}} : {{officeInfo.Closing_hours | date: "HH:mm:ss" | limitTo:5 }}
+      </p>
+      <hr>
+    </div>
+    <div class="content padding">
+      <p class="ion-ios-information-outline padding-left">
+        {{"DESCRIPTION" | translate}} :
+      </p>
+      <p class="padding-left padding-right">
+        {{"ADDRESS" | translate}}: {{officeInfo.Address }}
+        <br>
+        {{officeInfo.Description }}
+      </p>
+
+    </div>
+
+    <ion-list >
+      <ion-item class="item item-icon-right" type="item-text-wrap" ng-repeat="info in interoffice">
+        <h2>
+          {{info.Room_type}}
+        </h2>
+
+        <p style="font-style: italic">
+          Name: {{info.First_name}} {{info.Last_name}}
+          <br>
+          Room : {{info.Rooms_no}}
+          <br>
+          <a class="inter-phone" ng-href="tel:{{info.Phone_no}}"> Telephone: {{info.Phone_no}}</a>
+
+        </p>
+      </ion-item>
+
+    </ion-list>
+
+    <div class="content" style="padding: 50px"></div>
+
+
+  </ion-content>
+</ion-view>

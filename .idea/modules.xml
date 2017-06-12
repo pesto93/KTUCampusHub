@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:/xampp/htdocs/AdminModule/AdminModule.iml" filepath="C:/xampp/htdocs/AdminModule/AdminModule.iml" />
+      <module fileurl="file://C:/xampp/htdocs/BackEndV2/BackEndV2.iml" filepath="C:/xampp/htdocs/BackEndV2/BackEndV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KTU_CAMP_HUB.iml" filepath="$PROJECT_DIR$/KTU_CAMP_HUB.iml" />
+      <module fileurl="file://C:/xampp/htdocs/serverApi/serverApi.iml" filepath="C:/xampp/htdocs/serverApi/serverApi.iml" />
+    </modules>
+  </component>
+</project>

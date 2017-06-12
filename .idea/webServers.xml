@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="81b1873b-bb53-42bd-a6be-82eb5860f9cc" name="chionw" url="http://stud.if.ktu.lt">
+        <fileTransfer host="stud.if.ktu.lt" port="22" rootFolder="/home/chionw/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<ion-view cache-view="false" class="tabs-top">
+  <div class="bar bar-header" side="left" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back"></button>
+    <div class="h1 title">{{"ADD EVENT"|translate}}</div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options"></button>
+  </div>
+  <ion-content style="top: 45px" class="scroll-y">
+    <div class="list list-inset">
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"PHOTO" | translate}}
+        <input type="file" ng-model="EventsData.img" base-sixty-four-input required ng-required="">
+        </span>
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"EVENT NAME"|translate}}</span>
+        <input type="text" placeholder='{{"EVENT" | translate}}' ng-model="EventsData.title">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"EVENT TYPE" | translate}}</span>
+        <select name="type" ng-required="" required ng-model="EventsData.type">
+          <option value="leisure" selected>{{"LEISURE EVENT" | translate}}</option>
+        </select>
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"TIME" | translate}}</span>
+        <input type="time" ng-model="EventTime.time" placeholder="HH:mm:ss" required ng-required="true">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"DATE" | translate}}</span>
+        <input type="date" ng-model="EventsData.date">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"LOCATION" | translate}}</span>
+        <input type="text" placeholder='{{"STUDENTU" | translate}}' ng-model="EventsData.location">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{"DESCRIPTION" | translate}}</span>
+        <input type="text" placeholder='{{"EVENT DESCRIPTION" | translate}}' ng-model="EventsData.desc">
+      </label>
+
+      <button class="custom-button" ng-click="addPost('newsAndEvents')">
+        {{"SUBMIT" | translate}}
+      </button>
+
+      <div class="content " style="padding: 50px"></div>
+
+    </div>
+  </ion-content>
+</ion-view>

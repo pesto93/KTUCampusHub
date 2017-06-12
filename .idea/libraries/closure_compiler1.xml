@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="closure-compiler1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../WorkSpace/MyIonic2Project/node_modules/@ionic/app-scripts/bin/closure-compiler.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

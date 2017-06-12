@@ -1,0 +1,45 @@
+<ion-view cache-view="false" class="tabs-top">
+  <div class=" bar bar-header" side="left" ng-controller="NavCtrl">
+    <button ng-click="showMenu()" class="button button-icon icon ion-navicon" ></button>
+    <div class="h1 title">{{"CONTACT" | translate}}</div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options" ></button>
+  </div>
+  <ion-content style="top: 33px; padding-top: 12px; padding-bottom: 12px">
+    <div class="bar bar-header item-input-inset" >
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="{{'SEARCH CONTACT'| translate}}" ng-model="name" >
+      </label>
+      <button ng-click="getContact(name)" class="custom-cancel" >
+        {{'SEARCH BUTTON'| translate}}
+      </button>
+    </div>
+
+    <div class="padding">
+      <p style="text-align: center; font-size: 17px;">
+        <i class="icon ion-person"></i>
+        {{'CONTACT TEXT'| translate}}
+      </p>
+    </div>
+
+    <ion-content  id="contactView"  ng-bind-html="trustedHtml" padding="true">
+    </ion-content>
+
+    <div style="padding:20px">
+    </div>
+
+
+    <div class="bar bar-footer" style="bottom: -2px">
+      <button ng-click="previousData(name,btn_count)" class="custom-next" ng-hide="hideBtnprevious">
+        < {{"PREVIOUS" | translate}}
+      </button>
+
+      <button ng-click="nextData(name,0)" class="custom-next" ng-hide="hideBtnNext">
+        {{"NEXT" | translate}} >
+      </button>
+    </div>
+
+    </ion-content>
+
+</ion-view>
+

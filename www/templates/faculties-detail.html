@@ -1,0 +1,61 @@
+<ion-view cache-view="false">
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back" ></button>
+    <div class="h1 title">{{facultyDetail.building_name | limitTo: 20}}..</div>
+  </div>
+
+  <ion-content class="scroll-y">
+    <div class="img-wrap"
+         style="background-image: url(data:image/jpg;base64,{{facultyDetail.Images}});height:200px;">
+    </div>
+    <div class="img-title-bottom" ng-controller="NavCtrl">
+      <h4 class="custom-title">
+        {{facultyDetail.building_name | limitTo: 25}}...
+      </h4>
+      <a class="location-icon" ng-controller="BuildingLocationCtrl" ng-click="buildingLocation(facultyDetail.Cord)">
+        <i class="custom-icon ion-navigate"></i> {{"DIRECTION" | translate}}
+      </a>
+    </div>
+    <div class=" custom-connect ">
+      <a class="connect-link"  onclick="window.open('http://ktu.edu/en/faculties', '_system', 'location=yes');">
+        <i class=" web-icon  ion-ios-world"></i>{{"WEBSITE" | translate}}
+      </a>
+
+      <a class="connect-link" ng-href="tel:{{facultyDetail.admin_contact}}">
+        <i class="web-icon ion-android-call"></i>{{"CALL" | translate}}
+      </a>
+
+      <a class="connect-link"
+         href="#/tab/buildings/cafes/{{facultyDetail.building_name}}">
+        <i class="web-icon ion-android-restaurant"></i>{{"CAFES" | translate}}
+      </a>
+    </div>
+
+    <div class="content padding  no-padding-bottom" style="z-index: -1;">
+      <hr>
+      <p class="padding" style="margin-bottom: 0px">
+        <i class="icon ion-clock"></i> {{"OPENING HOURS" | translate}} : {{facultyDetail.Opening_hours | date:'HH:MM:' |
+        limitTo:5}}
+        <br/>
+        <i class="icon ion-clock"></i> {{"CLOSING HOURS" | translate}} : {{facultyDetail.Closing_hours | date:'HH:MM:SS'
+        | limitTo:5}}
+      </p>
+      <hr>
+    </div>
+    <div class="content padding">
+      <p class="ion-ios-information-outline padding-left">
+        {{"DESCRIPTION" | translate}} :
+      </p>
+      <p class="padding-left padding-right">
+        {{"ADDRESS" | translate}}: {{facultyDetail.Address}}
+        <br>
+        {{facultyDetail.Description}}
+      </p>
+      <hr>
+    </div>
+    <div class="content" style="padding: 50px"></div>
+  </ion-content>
+
+
+</ion-view>
+

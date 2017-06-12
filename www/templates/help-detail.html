@@ -1,0 +1,25 @@
+<ion-view cache-view="false" class="tabs-top">
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back" ></button>
+    <div class="h1 title">{{"HELP" | translate}}</div>
+    <!--<button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options" style="color: white"></button>-->
+  </div>
+
+  <ion-content style="top: 45px">
+    <div class="list card">
+      <div class="help-title" style="padding: 10px; ">
+        <h4  style="font-size: 20px;" class="ion-information-circled">
+          {{helpDetail.Title}}
+        </h4>
+        <p style="padding: 30px 10px 5px 10px">
+          {{helpDetail.Description}}
+        </p>
+      </div>
+    </div>
+
+
+    <div style="padding: 20px"></div>
+  </ion-content>
+</ion-view>
+
+

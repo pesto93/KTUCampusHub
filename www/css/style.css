@@ -1,0 +1,544 @@
+
+.tabs-top.tabs-striped .tab-item.tab-item-active, .tabs-top.tabs-striped .tab-item.active, .tabs-top.tabs-striped .tab-item.activated {
+  margin-top: -2px;
+  border-width: 2px 0px 0px 0px !important;
+  border-style: solid;
+}
+.tabs-top > .tabs, .tabs.tabs-top {
+  top: 44 !important;
+  bottom: 0px;
+  padding-top: 0;
+  background-position: bottom;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+button .button-icon {
+  color: #ffffff !important;
+}
+.has-tabs-top {
+  top: 44px;
+}
+.has-header {
+  top: 135px;
+}
+.custom-title{
+  color:white;
+  position: absolute;
+}
+/*
+.nav-bar-block > .bar-header{
+  border-bottom: 1px #b2b2b2!important;
+}*/
+.bar .title.title-left {
+  text-align: center;
+}
+
+.bar.bar-header .title {
+  color: #ffffff !important;
+}
+[nav-bar-transition="android"] [nav-bar="active"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+  background: #3f628d;
+  border-bottom: 1px solid;
+}
+
+.tabs-striped .tabs {
+  background-color: #d6e026;
+  background-image: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-top: 2px;
+}
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+  border-color: #3f628d;
+  color: #3f628d;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item {
+  color: #111;
+}
+.tabs-top .bar-header {
+  border-bottom-width: 0px;
+  background-image: none;
+  background: #3f628d;
+  border-bottom: 1px solid;
+}
+
+.bar button.button-icon .custom-size-icon .icon:before {
+  vertical-align: top;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+#map {
+  width: 100%;
+  height: 92%;
+}
+#map-2 {
+  width: 100%;
+  height: 92%;
+}
+
+.gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
+  font-weight: 400;
+  display: none!important;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.custom-button {
+  border-color: transparent;
+  background-color: #3f628d;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+  width: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.custom-blue {
+  height: 135px;
+  background-image: url("../img/Camp1.png")!important;
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: absolute;
+}
+
+#search {
+  padding: 50px 15px 10px 15px;
+}
+
+#search input[type="text"] {
+  background: url('../img/search-blue.png') no-repeat 10px 6px #fcfcfc;
+  border: 1px solid #d1d1d1;
+  font: bold 14px Arial, Helvetica, Sans-serif;
+  color: #262626;
+  width: 200px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+#search input[type="text"]:focus {
+  width: 250px;
+}
+#contact-search {
+  padding: 10px 15px 10px 15px;
+}
+#contact-search input[type="text"] {
+  background: url('../img/search-blue.png') no-repeat 10px 6px #fcfcfc;
+  border: 1px solid #d6e026;
+  font: bold 14px Arial, Helvetica, Sans-serif;
+  color: #262626;
+  width: 300px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+#contact-search input[type="text"]:focus {
+  width: 330px;
+}
+
+.custom-menu-right {
+  right: 25px;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 10px;
+  min-width: 30px;
+  height: 43px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.marquee {
+  width: 98%;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  color: #3f628d;
+  border: 1px solid #3f628d;
+  border-radius: 26px;
+  top: 0.20rem;
+  left: 0.2em;
+  right: 0.2em;
+  z-index: 9999;
+}
+
+#news_strip {
+  width: 85%;
+  float: right;
+  text-align: center;
+  display: block;
+  height: inherit;
+  position: relative;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+#news_strip a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 20px;
+  z-index: 1;
+  position: absolute;
+  top: 9px;
+  width: 450px;
+  vertical-align: top;
+  font-family: 'Roboto', sans-serif;
+}
+
+#news_strip a span {
+  cursor: pointer;
+  display: inline-block;
+  color: #343434;
+  font-weight: bold;
+  padding-right: 5px;
+  z-index: 1;
+}
+
+#news_strip a span.date {
+  display: inline-block;
+  font-weight: normal;
+  color: #888888;
+}
+
+#news_strip a:hover span.title {
+  text-decoration: underline;
+}
+
+/* The shadow DIVs of the sides are decorative and optional, but they add a very nice effect :) */
+
+#news_strip div.shadow{
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 100%;
+  z-index: 5;
+  background: #ffffff;
+}
+
+#news_strip div.shadow.left{
+  left: 0px;
+  -webkit-box-shadow: 10px 0px 10px #fff;
+  -moz-box-shadow: 10px 0px 10px #fff;
+  box-shadow: 10px 0px 10px #fff;
+}
+
+#news_strip div.shadow.right{
+  right: 0px;
+  -webkit-box-shadow: -10px 0px 10px #fff;
+  -moz-box-shadow: -10px 0px 10px #fff;
+  box-shadow: -10px 0px 10px #fff;
+}
+.img-title-bottom{
+  background-color: #365780;
+  padding:5px 10px 0 10px;
+}
+.location-icon {
+  top: -20px;
+  position: relative;
+  color: #d6e026;
+  padding-left: 75%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.location-icon> .custom-icon{
+  display: block;
+  margin: 0 auto;
+  height: 32px;
+  font-size: 32px;
+}
+.header .col {
+  background-color:#365780;
+}
+.cafe-name{
+  color: #ffffff;
+}
+
+.col {
+  border: solid 1px grey;
+  border-bottom-style: none;
+  border-right-style: none;
+}
+
+.col:last-child {
+  border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+  border-bottom: solid 1px grey;
+}
+.custom-connect{
+  margin-top: 2px;
+}
+.web-container{
+  width:100%;
+  overflow: auto;
+  float: left;
+  text-align: center;
+  color:#365780;
+}
+
+.connect-link{
+  width:33%;
+  overflow: auto;
+  float: left;
+  text-align: center;
+  color: #365780;
+}
+a{
+  text-decoration: none;
+}
+.connect-link2{
+  width:50%;
+  overflow: auto;
+  float: left;
+  text-align: center;
+  color: #365780;
+}
+.web-icon{
+  padding-left:15%;
+  padding-right:15%;
+  display:block;
+  font-size:35px;
+}
+.custom-location{
+  width: 100%;
+  margin-top: 2px;
+}
+.locate{
+  width:50%;
+  overflow: auto;
+  float: left;
+  text-align: center;
+  color:#365780;
+}
+.custom-size-icon {
+  color:white;
+}
+.button-icon{
+  color:white;
+}
+.branch-title{
+  color:white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.custom-cancel {
+  background: none;
+  box-shadow: none;
+  color: white;
+  border-color: transparent;
+  z-index: 1;
+  padding: 0 8px;
+  min-width: initial;
+  min-height: 31px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.bar .button, .bar button {
+  z-index: 1;
+  padding: 0 8px;
+  min-width: initial;
+  min-height: 31px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;}
+
+.custom-cancel.active > .activated {
+  opacity: 0.3;
+}
+div #contactView .view{
+  overflow:auto;
+  top:3rem;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 3rem;
+}
+
+.view-filters, .element-invisible, .pager{
+  display: none;
+}
+
+.view-header > h2 {
+display: none;
+}
+
+div .view-header{
+  display: none;
+}
+
+tr td, tr th {
+  padding: 4px 9px;
+ /* border: 1px solid #365780;*/
+  text-align: left;
+}
+.custom-next {
+  background: none;
+  box-shadow: none;
+  color: #365780;
+  border-color: transparent;
+  z-index: 1;
+  padding: 0 8px;
+  min-width: initial;
+  min-height: 31px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.black-theme{
+  background-color: white;
+  color: white;
+}
+a.custom-item{
+  color: black;
+}
+.custom-item{
+  border-color: #ddd;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  padding: 16px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+}
+
+.inter-phone{
+  color: #365780;
+}
+/*.................for javascript protected email hiding and width after hiding stars here............................*/
+div .views-table {
+  width: 100%;
+}
+div .views-field-field-kontaktai-1{
+  width: 100%;
+  display: block;
+  color: #3f628d;
+}
+div .views-field-field-wscont-pareigos-1{
+  width: 100%;
+  display: block;
+  font-style: italic;
+}
+div .views-field-name-1{
+  width: 100%;
+  display: block;
+  font-weight: bolder;
+}
+
+div .views-field-field-kontaktai-1 > span{
+  display: none;
+}
+div .odd{
+  min-height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  border-color: #ddd;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  z-index: 2;
+  margin: -1px;
+  padding: 16px;
+  border-width: 1px;
+  display: block;
+  border-style: solid;
+  font-size: 16px;
+}
+div .even{
+  min-height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ /* white-space: nowrap;*/
+  border-color: #ddd;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  z-index: 2;
+  margin: -1px;
+  padding: 16px;
+  border-width: 1px;
+  display: block;
+  border-style: solid;
+  font-size: 16px;
+}
+
+div > table > thead> tr{
+  display: none;
+}
+
+div #contactView .contact-error {
+  overflow: auto;
+  font-size: 16px;
+  top: 3rem;
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+/*........................................................Ends here...................................................*/
+

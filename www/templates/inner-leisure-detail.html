@@ -1,0 +1,46 @@
+<ion-view cache-view="false">
+  <div class="bar bar-header" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back" ></button>
+    <div class="h1 title">{{leisureDetail.Title | limitTo: 12}}...</div>
+    <!--<button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options" style="color: white"></button>-->
+  </div>
+
+  <ion-content class="scroll-y" >
+    <div class="list card" >
+
+      <div class="item item-body">
+        <img class="full-image" src="data:image/jpg;base64,{{leisureDetail.Image}}">
+
+        <div class title="event-title">
+          <h2>{{"EVENT NAME" | translate}}: {{leisureDetail.Title}}  </h2>
+        </div>
+
+        <hr>
+
+        <div class="address">
+          <p>{{"DATE" | translate}}: {{leisureDetail.Date}} </p>
+          <p>{{"TIME" | translate}}: {{leisureDetail.Time | date:"HH:MM" |limitTo:5}} </p>
+        </div>
+
+        <hr>
+
+        <div class="address">
+          <p>{{"LOCATION" | translate}}: {{leisureDetail.Location}}</p>
+        </div>
+
+        <hr>
+
+        <div class="description">
+          <p>{{"DESCRIPTION" | translate}}:<br><br>
+            {{leisureDetail.Description}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="kk" style="padding: 30px"></div>
+
+  </ion-content>
+</ion-view>
+

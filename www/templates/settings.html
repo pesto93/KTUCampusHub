@@ -1,0 +1,33 @@
+<ion-view cache-view="false" class="tabs-top">
+  <div class="bar bar-header" side="left" ng-controller="BckCtrl">
+    <button ng-click="myGoBack()" class="button button-icon icon ion-android-arrow-back" ></button>
+    <div class="h1 title">{{"SETTINGS" | translate}}</div>
+  </div>
+  <ion-content  style="top: 45px">
+    <ion-list>
+      <ion-toggle ng-disable="enableNotify" ng-click="scheduleSingleNotification()"  ng-model="settings.notification" >
+        {{"NOTIFICATION" | translate}}
+      </ion-toggle>
+      <ion-toggle ng-click="changeMode()"  ng-model="settings.nightMode" >
+        {{"NIGHT MODE" | translate}}
+      </ion-toggle>
+      <div class="item item-input item-select">
+        <div class="input-label">
+          {{"LANGUAGE" | translate}}
+        </div>
+        <select ng-controller="LanguageController" ng-options="lang as lang.name for lang in langs" ng-model="lng"
+                ng-change="changeLanguage()">
+        </select>
+
+      </div>
+      <ion-item>
+        <h2>{{"APP VERSION"|translate}}</h2>
+        <p>1.2.1</p>
+      </ion-item>
+      <ion-item>
+        <h2> {{"LAST SCHEDULE UPDATE"|translate}}</h2>
+        <p>{{"RELEASE DATE" | translate}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

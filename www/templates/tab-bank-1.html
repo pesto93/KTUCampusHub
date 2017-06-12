@@ -1,0 +1,19 @@
+<ion-view>
+  <div class="bar bar-header" side="left" ng-controller="NavCtrl">
+    <button ng-click="showMenu()" class="button button-icon icon ion-navicon" ></button>
+    <div class="h1 title">{{"BANKS" | translate}}</div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options" ></button>
+
+  </div>
+
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/bank/banks">
+        <h2>
+          {{"BANK BRANCH" | translate}}
+        </h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

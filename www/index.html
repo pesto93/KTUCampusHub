@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app="KTU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>-->
+  <link href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%7CRoboto" rel="stylesheet">
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" ng-href="css/{{mode}}.css">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body>
+
+<ion-side-menus>
+
+  <ion-side-menu-content ng-controller="NavCtrl">
+    <!--<ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+    </ion-nav-bar>-->
+   <!-- <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear ion-navicon" ng-click="showMenu()">
+      </button>
+    </ion-nav-buttons>-->
+
+    <!--<ion-nav-buttons side="right">
+      <button class="button button-icon button-clear ion-ios7-gear" ng-click="showRightMenu()">
+      </button>
+    </ion-nav-buttons>-->
+
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar bar-header custom-blue" style="top:0px">
+      <!--<h1 class="custom-menu-right">{{"MENU"|translate}}</h1>-->
+    </ion-header-bar>
+
+    <ion-content has-header="true" class="black-theme">
+      <ul class="list">
+        <li>
+          <a class="custom-item" menu-close="" nav-clear="" href="#/tab/events">
+            <i class="ion-android-clipboard"></i>
+            {{"NEWS AND EVENT" | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="custom-item" menu-close="" href="#/tab/buildings">
+            <i class="ion-university"></i>
+            {{"KTU BUILDING" | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="custom-item" menu-close="" href="#/contacts">
+            <i class="ion-android-contacts"></i>
+            {{"CONTACT" | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="custom-item" menu-close="" href="#/tab/bank ">
+            <i class="ion-card"></i>
+            {{"BANKS" | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="custom-item" menu-close="" href="#/info">
+            <i class="ion-information-circled"></i>
+            {{"GUIDE" | translate}}
+          </a>
+        </li>
+        <li>
+          <a class="custom-item" menu-close="" href="#/help">
+            <i class="ion-help-circled"></i>
+            {{"HELP" | translate}}
+          </a>
+        </li>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+<script src="lib/angular-sanitize/angular-sanitize.js"></script>
+<script src="lib/angular-translate/angular-translate.min.js"></script>
+<script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+<script src="lib/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+<script src="lib/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+<script src="lib/moment/min/moment.min.js"></script>
+<script src="lib/angular-moment/angular-moment.js"></script>
+<script src="lib/angular-cookies/angular-cookies.min.js"></script>
+<script src="lib/angular-base64-upload/dist/angular-base64-upload.min.js"></script>
+<script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBmaXeWi4ZrUpTa3g4rhosNUfzDwBUD--g&libraries=places"></script>
+
+<!--<script src="https://maps-api-ssl.google.com/maps/api/js?libraries=places"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmaXeWi4ZrUpTa3g4rhosNUfzDwBUD&#45;&#45;g"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<ion-view >
+  <div class="bar bar-header" side="left" ng-controller="NavCtrl">
+    <button ng-click="showMenu()" class="button button-icon icon ion-navicon" ></button>
+    <div class="h1 title">{{"HOME" | translate}}</div>
+    <button ng-click="create()" class="button custom-size-icon button-icon icon ion-android-options" ></button>
+  </div>
+  <ion-content class="">
+    <div class="list" style="background:#eaeaea; padding-bottom: 0px;
+    margin-bottom: 0px;">
+      <div class="marquee">
+        <div id="news_strip" ng-init="init()" ng-mouseover="conf.news_move_flag=false"
+             ng-mouseout="conf.news_move_flag=true">
+          <div class="shadow left">&nbsp;</div>
+          <a ng-repeat="(k, n) in news track by $index" ng-style="{'right': get_news_right($index)}"
+             id="news_{{$index}}" rel="nofollow" href="#{{n.url}}{{n.id}}">
+            <span class="date">{{n.pubDate}}</span>
+            <span class="title">{{n.title | limitTo: 25}}...</span>
+          </a>
+          <div class="shadow right">&nbsp;</div>
+        </div>
+        <div style="left: 10rem; max-width: 4rem; font-size: 45px; margin-left: 7px; z-index: 999999;">
+          <i class="icon ion-speakerphone"
+             style="left: 10rem; max-width: 4rem; font-size: 35px; margin-left: 4px; z-index: 999999;"></i>
+        </div>
+      </div>
+    </div>
+    <div id="map" data-tap-disabled="true"></div>
+  </ion-content>
+</ion-view>
+

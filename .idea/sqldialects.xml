@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://C:/xampp/htdocs/BackEndV2" dialect="MySQL" />
+    <file url="file://C:/xampp/htdocs/serverApi" dialect="MySQL" />
+  </component>
+</project>
